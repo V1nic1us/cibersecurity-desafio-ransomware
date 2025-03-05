@@ -24,9 +24,9 @@ os.remove(file_name)
 new_file = "teste.txt"
 try:
     file = open(new_file, "wb")
-    new_file.write(decrypt_data)
+    file.write(decrypt_data)
 except:
     print("Erro ao criar o arquivo descriptografado")
     exit(1)
 finally:
-    new_file.close()
+    file.close()
