@@ -23,7 +23,7 @@ os.remove(file_name)
 ## criar o arquivo descriptografado
 new_file = "teste.txt"
 try:
-    file = open(new_file, "rb")
+    file = open(new_file, "wb")
     new_file.write(decrypt_data)
 except:
     print("Erro ao criar o arquivo descriptografado")
